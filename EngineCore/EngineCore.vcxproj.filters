@@ -25,6 +25,9 @@
     <Filter Include="Script">
       <UniqueIdentifier>{3ab26d69-45b6-4c9d-80ef-3fdf69ada6cc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{4d996ce1-575f-4d06-85b8-9d3bf4fa92a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Math\LBMath.h">
@@ -64,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="Show\Sound.h">
       <Filter>Show</Filter>
+    </ClInclude>
+    <ClInclude Include="System\InputKeys.h">
+      <Filter>System</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

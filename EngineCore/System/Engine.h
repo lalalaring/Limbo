@@ -8,14 +8,16 @@
 #include "SystemCmd.h"
 #include "../Show/Render.h"
 #include "../Show/Sound.h"
+#include "InputKeys.h"
 namespace Limbo
 {
 	class Engine :public Singleton<Engine>
 	{
 	public:
 		bool Create();
-
+		bool Destory();
 		bool CallSystemCmd(SystemCmd cmd, int32_t para0, int32_t para1);
+		bool InputHandler(int inputkey);
 	protected:
 	private:
 		std::shared_ptr<System> m_system;

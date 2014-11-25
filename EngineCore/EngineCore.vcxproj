@@ -74,6 +74,7 @@
     <ClInclude Include="Show\Render.h" />
     <ClInclude Include="Show\Sound.h" />
     <ClInclude Include="System\Engine.h" />
+    <ClInclude Include="System\InputKeys.h" />
     <ClInclude Include="System\MM.h" />
     <ClInclude Include="System\PluginMgr.h" />
     <ClInclude Include="System\System.h" />

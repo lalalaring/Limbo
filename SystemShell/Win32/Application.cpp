@@ -5,10 +5,13 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	switch (message)
 	{
 	case WM_CLOSE:
-		Limbo::Engine::Instance()->CallSystemCmd(SystemCmd_OnClose, 0, 0);
-		break;
+		//Limbo::Engine::Instance()->CallSystemCmd(SystemCmd_OnClose, 0, 0);
+		//break;
 	case WM_DESTROY:
 		PostQuitMessage(0);
+		break;
+	case WM_CHAR:
+		Limbo::Engine::Instance()->InputHandler((int)wParam);
 		break;
 	default:
 		return DefWindowProc(hWnd, message, wParam, lParam);
@@ -17,7 +20,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 }
 bool Application::Create()
 {
-	WNDCLASSEX wcex;
+
 
 	wcex.cbSize = sizeof(WNDCLASSEX);
 
@@ -34,6 +37,11 @@ bool Application::Create()
 	wcex.hIconSm = NULL;//LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_SMALL));
 
 	return RegisterClassEx(&wcex);
+}
+bool Application::Destory()
+{
+	UnregisterClass(L"Win32App", GetModuleHandle(0));
+	return true;
 }
 int Application::Run()
 {
