@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineCore", "EngineCore\EngineCore.vcxproj", "{C9165602-D170-42EA-B84F-C77F368E4881}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3F84196-2097-4DA0-B456-BA5F4D35543A} = {A3F84196-2097-4DA0-B456-BA5F4D35543A}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemShell", "SystemShell", "{5E45B92C-5BFC-4379-B3B6-1BA60F7CBA1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{CA93E38A-34DA-421A-8D7D-7E21EC3EECCD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Win32", "SystemShell\Win32\Win32.vcxproj", "{057A1C64-46F4-4840-984F-7637ACF36F66}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C9165602-D170-42EA-B84F-C77F368E4881} = {C9165602-D170-42EA-B84F-C77F368E4881}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Render_D3d11", "Plugins\Render\Render.vcxproj", "{A3F84196-2097-4DA0-B456-BA5F4D35543A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sound_Dsound", "Plugins\Sound_Dsound\Sound_Dsound.vcxproj", "{66E12779-9C36-4307-950E-73231F4B861D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9165602-D170-42EA-B84F-C77F368E4881}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C9165602-D170-42EA-B84F-C77F368E4881}.Debug|Win32.Build.0 = Debug|Win32
+		{C9165602-D170-42EA-B84F-C77F368E4881}.Release|Win32.ActiveCfg = Release|Win32
+		{C9165602-D170-42EA-B84F-C77F368E4881}.Release|Win32.Build.0 = Release|Win32
+		{057A1C64-46F4-4840-984F-7637ACF36F66}.Debug|Win32.ActiveCfg = Debug|Win32
+		{057A1C64-46F4-4840-984F-7637ACF36F66}.Debug|Win32.Build.0 = Debug|Win32
+		{057A1C64-46F4-4840-984F-7637ACF36F66}.Release|Win32.ActiveCfg = Release|Win32
+		{057A1C64-46F4-4840-984F-7637ACF36F66}.Release|Win32.Build.0 = Release|Win32
+		{A3F84196-2097-4DA0-B456-BA5F4D35543A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A3F84196-2097-4DA0-B456-BA5F4D35543A}.Debug|Win32.Build.0 = Debug|Win32
+		{A3F84196-2097-4DA0-B456-BA5F4D35543A}.Release|Win32.ActiveCfg = Release|Win32
+		{A3F84196-2097-4DA0-B456-BA5F4D35543A}.Release|Win32.Build.0 = Release|Win32
+		{66E12779-9C36-4307-950E-73231F4B861D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{66E12779-9C36-4307-950E-73231F4B861D}.Debug|Win32.Build.0 = Debug|Win32
+		{66E12779-9C36-4307-950E-73231F4B861D}.Release|Win32.ActiveCfg = Release|Win32
+		{66E12779-9C36-4307-950E-73231F4B861D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{057A1C64-46F4-4840-984F-7637ACF36F66} = {5E45B92C-5BFC-4379-B3B6-1BA60F7CBA1A}
+		{A3F84196-2097-4DA0-B456-BA5F4D35543A} = {CA93E38A-34DA-421A-8D7D-7E21EC3EECCD}
+		{66E12779-9C36-4307-950E-73231F4B861D} = {CA93E38A-34DA-421A-8D7D-7E21EC3EECCD}
+	EndGlobalSection
+EndGlobal

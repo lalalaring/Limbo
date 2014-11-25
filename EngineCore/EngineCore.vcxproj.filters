@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Math">
+      <UniqueIdentifier>{b25e5be6-2e31-4017-8f36-f4959d1d3f9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{59ce00ad-a227-4444-a030-bd4e363d82df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{da75d071-82d2-4f0b-badb-83da4c476595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Show">
+      <UniqueIdentifier>{f88c010b-ae12-4ae4-b052-3ff3ade95fa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{e8ef93fb-9add-45e5-ad07-3942838f7bc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{4471581d-2a47-4fd9-aa56-dd977f31ae1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{dbac4714-390a-476d-9808-44a03f5f308d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{3ab26d69-45b6-4c9d-80ef-3fdf69ada6cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Math\LBMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\LBIO.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="System\System.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceMgr.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Show\Render.h">
+      <Filter>Show</Filter>
+    </ClInclude>
+    <ClInclude Include="System\MM.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Engine.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="System\PluginMgr.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Singleton.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Limbo.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="System\SystemCmd.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Show\Sound.h">
+      <Filter>Show</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Math\LBMath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\LBIO.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="System\System.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceMgr.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Show\Render.cpp">
+      <Filter>Show</Filter>
+    </ClCompile>
+    <ClCompile Include="System\MM.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Engine.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Input.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="System\PluginMgr.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Show\Sound.cpp">
+      <Filter>Show</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
