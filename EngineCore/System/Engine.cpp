@@ -1,14 +1,18 @@
 #include "Engine.h"
 //#include <windows.h>
+#include <windows.h>
+#include "../Interface/IFactory.h"
+typedef IRenderFactory* (*lp_Func_createfactory)();
 namespace Limbo
 {
-	bool Engine::Create()
+	bool Engine::Create(int32_t bindWnd)
 	{
 		m_system.reset(new System());
 		m_input.reset(new Input());
-		m_render.reset(new Render());
+		m_render.reset(new NullRender());
 		m_sound.reset(new Sound());
 		m_system->Create();
+
 		return true;
 	}
 	bool Engine::Destory()
@@ -19,6 +23,10 @@ namespace Limbo
 		m_render.reset();
 		m_sound.reset();
 		return true;
+	}
+	void Engine::Draw()
+	{
+		//render->Draw();
 	}
 	bool Engine::CallSystemCmd(SystemCmd cmd, int32_t para0, int32_t para1)
 	{

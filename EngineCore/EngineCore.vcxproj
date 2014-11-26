@@ -66,6 +66,9 @@
   <ItemGroup>
     <ClInclude Include="Base\Singleton.h" />
     <ClInclude Include="Input\Input.h" />
+    <ClInclude Include="Interface\IFactory.h" />
+    <ClInclude Include="Interface\IInterface.h" />
+    <ClInclude Include="Interface\IRender.h" />
     <ClInclude Include="IO\LBIO.h" />
     <ClInclude Include="Limbo.h" />
     <ClInclude Include="Math\LBMath.h" />

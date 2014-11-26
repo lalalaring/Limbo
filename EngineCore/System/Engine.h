@@ -14,16 +14,18 @@ namespace Limbo
 	class Engine :public Singleton<Engine>
 	{
 	public:
-		bool Create();
+		bool Create(int32_t bindWnd);
 		bool Destory();
+		void Draw();
 		bool CallSystemCmd(SystemCmd cmd, int32_t para0, int32_t para1);
 		bool InputHandler(int inputkey);
 	protected:
 	private:
 		std::shared_ptr<System> m_system;
 		std::shared_ptr<Input>   m_input;
-		std::shared_ptr<Render>   m_render;
+		std::shared_ptr<NullRender>   m_render;
 		std::shared_ptr<Sound>   m_sound;
+		IRender* render;
 	};
 
 }

@@ -53,6 +53,7 @@ int Application::Run()
 	{
 		TranslateMessage(&msg);
 		DispatchMessage(&msg);
+		Limbo::Engine::Instance()->Draw();
 	}
 	return (int)msg.wParam;
 }

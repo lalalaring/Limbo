@@ -28,6 +28,9 @@
     <Filter Include="Logic">
       <UniqueIdentifier>{4d996ce1-575f-4d06-85b8-9d3bf4fa92a6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{4cebe0f3-81f9-4617-9edd-f6142d38292b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Math\LBMath.h">
@@ -70,6 +73,15 @@
     </ClInclude>
     <ClInclude Include="System\InputKeys.h">
       <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\IRender.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\IFactory.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\IInterface.h">
+      <Filter>Interface</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
