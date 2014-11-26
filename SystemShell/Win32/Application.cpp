@@ -10,6 +10,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	case WM_DESTROY:
 		PostQuitMessage(0);
 		break;
+	case WM_SIZE:
+		Limbo::Engine::Instance()->CallSystemCmd(SystemCmd_OnSize, wParam, lParam);
+		break;
 	case WM_CHAR:
 		Limbo::Engine::Instance()->InputHandler((int)wParam);
 		break;

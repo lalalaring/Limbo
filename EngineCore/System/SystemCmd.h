@@ -5,5 +5,6 @@ enum SystemCmd
 {
 	SystemCmd_OnClose,
 	SystemCmd_OnMinimized,
-	SystemCmd_OnMaximized
+	SystemCmd_OnMaximized,
+	SystemCmd_OnSize
 };

@@ -31,6 +31,9 @@ namespace Limbo
 			break;
 		case SystemCmd_OnMaximized:
 			break;
+		case 	SystemCmd_OnSize:
+			m_render->OnSize(para0, para1);
+			break;
 		default:
 			break;
 		}
