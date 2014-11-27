@@ -15,7 +15,7 @@ class PluginMgr :public Singleton<PluginMgr>
 {
 public:
 	int32_t Load(wchar_t* name);
-	IInterface* CreateInstance(PluginType type,int32_t module);
+	IInterface* CreateInstance(int32_t module);
 	void Free(int32_t module);
 protected:
 private:

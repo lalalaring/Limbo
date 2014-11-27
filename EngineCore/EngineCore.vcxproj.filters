@@ -89,6 +89,12 @@
     <ClInclude Include="Interface\IInput.h">
       <Filter>Interface</Filter>
     </ClInclude>
+    <ClInclude Include="Show\NullInput.h">
+      <Filter>Show</Filter>
+    </ClInclude>
+    <ClInclude Include="Show\Time.h">
+      <Filter>Base</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Math\LBMath.cpp">
@@ -119,6 +125,9 @@
       <Filter>System</Filter>
     </ClCompile>
     <ClCompile Include="Show\Sound.cpp">
+      <Filter>Show</Filter>
+    </ClCompile>
+    <ClCompile Include="Show\NullInput.cpp">
       <Filter>Show</Filter>
     </ClCompile>
   </ItemGroup>

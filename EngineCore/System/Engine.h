@@ -6,6 +6,7 @@
 #include "System.h"
 #include "../Input/Input.h"
 #include "SystemCmd.h"
+#include "../Interface/IInput.h"
 #include "../Show/Render.h"
 #include "../Show/Sound.h"
 #include "InputKeys.h"
@@ -26,7 +27,7 @@ namespace Limbo
 	protected:
 	private:
 		std::shared_ptr<System> m_system;
-		std::shared_ptr<Input>   m_input;
+		std::shared_ptr<IInput>   m_input;
 		std::shared_ptr<IRender>   m_render;
 		std::shared_ptr<ISound>   m_sound;
 	};

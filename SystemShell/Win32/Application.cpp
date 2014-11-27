@@ -68,7 +68,7 @@ int Application::Run()
 		else
 		{
 			//result = bexit; //如果按了ESC,也退出程序
-
+			Limbo::Engine::Instance()->Update(0);
 			Limbo::Engine::Instance()->Draw();
 			//if (result)
 			//{

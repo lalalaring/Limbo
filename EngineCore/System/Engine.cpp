@@ -9,11 +9,14 @@ namespace Limbo
 	{
 		m_system.reset(new System());
 		m_system->Create();
-		m_input.reset(new Input());
+
+		int32_t hm2 = PluginMgr::Instance()->Load(L"Input_DInput.dll");
+		m_input.reset((IInput*)PluginMgr::Instance()->CreateInstance(hm2));
+		m_input->Create();
 		int32_t hm = PluginMgr::Instance()->Load(L"Render_D3d11.dll");
-		m_render.reset((IRender*)PluginMgr::Instance()->CreateInstance(PluginType_Render,hm));
+		m_render.reset((IRender*)PluginMgr::Instance()->CreateInstance(hm));
 		int32_t hm1 = PluginMgr::Instance()->Load(L"Sound_Dsound.dll");
-		m_sound.reset((ISound*)PluginMgr::Instance()->CreateInstance(PluginType_Sound,hm1));
+		m_sound.reset((ISound*)PluginMgr::Instance()->CreateInstance(hm1));
 		m_sound->Create();
 		m_render->Create(bindWnd, 800, 600);
 		return true;
@@ -31,7 +34,7 @@ namespace Limbo
 	}
 	void Engine::Update(float deltatime)
 	{
-
+		int state = m_input->GetKeyState(0);
 	}
 	void Engine::Draw()
 	{

@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Render_D3d11", "Plugins\Ren
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sound_Dsound", "Plugins\Sound_Dsound\Sound_Dsound.vcxproj", "{66E12779-9C36-4307-950E-73231F4B861D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Input_DInput", "Plugins\Input_DInput\Input_DInput.vcxproj", "{0F5ECD2C-B3E9-4DFF-9D39-817DF9F49082}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -43,6 +45,10 @@ Global
 		{66E12779-9C36-4307-950E-73231F4B861D}.Debug|Win32.Build.0 = Debug|Win32
 		{66E12779-9C36-4307-950E-73231F4B861D}.Release|Win32.ActiveCfg = Release|Win32
 		{66E12779-9C36-4307-950E-73231F4B861D}.Release|Win32.Build.0 = Release|Win32
+		{0F5ECD2C-B3E9-4DFF-9D39-817DF9F49082}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0F5ECD2C-B3E9-4DFF-9D39-817DF9F49082}.Debug|Win32.Build.0 = Debug|Win32
+		{0F5ECD2C-B3E9-4DFF-9D39-817DF9F49082}.Release|Win32.ActiveCfg = Release|Win32
+		{0F5ECD2C-B3E9-4DFF-9D39-817DF9F49082}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +57,6 @@ Global
 		{057A1C64-46F4-4840-984F-7637ACF36F66} = {5E45B92C-5BFC-4379-B3B6-1BA60F7CBA1A}
 		{A3F84196-2097-4DA0-B456-BA5F4D35543A} = {CA93E38A-34DA-421A-8D7D-7E21EC3EECCD}
 		{66E12779-9C36-4307-950E-73231F4B861D} = {CA93E38A-34DA-421A-8D7D-7E21EC3EECCD}
+		{0F5ECD2C-B3E9-4DFF-9D39-817DF9F49082} = {CA93E38A-34DA-421A-8D7D-7E21EC3EECCD}
 	EndGlobalSection
 EndGlobal

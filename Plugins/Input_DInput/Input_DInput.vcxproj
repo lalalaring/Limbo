@@ -11,12 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C9165602-D170-42EA-B84F-C77F368E4881}</ProjectGuid>
-    <RootNamespace>EngineCore</RootNamespace>
+    <ProjectGuid>{0F5ECD2C-B3E9-4DFF-9D39-817DF9F49082}</ProjectGuid>
+    <RootNamespace>Sound_Dsound</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -38,7 +38,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>E:\MySpace\Limbo\EngineCore\Interface;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -64,41 +66,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Base\Singleton.h" />
-    <ClInclude Include="Input\Input.h" />
-    <ClInclude Include="Interface\IFactory.h" />
-    <ClInclude Include="Interface\IInput.h" />
-    <ClInclude Include="Interface\IInterface.h" />
-    <ClInclude Include="Interface\IRender.h" />
-    <ClInclude Include="Interface\ISound.h" />
-    <ClInclude Include="IO\LBIO.h" />
-    <ClInclude Include="Limbo.h" />
-    <ClInclude Include="Math\LBMath.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="Resource\ResourceMgr.h" />
-    <ClInclude Include="Show\NullInput.h" />
-    <ClInclude Include="Show\Render.h" />
-    <ClInclude Include="Show\Sound.h" />
-    <ClInclude Include="Show\Time.h" />
-    <ClInclude Include="System\Engine.h" />
-    <ClInclude Include="System\InputKeys.h" />
-    <ClInclude Include="System\MM.h" />
-    <ClInclude Include="System\PluginMgr.h" />
-    <ClInclude Include="System\System.h" />
-    <ClInclude Include="System\SystemCmd.h" />
+    <ClInclude Include="DllExport.h" />
+    <ClInclude Include="DInputClass.h" />
+    <ClInclude Include="DInputFactory.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Input\Input.cpp" />
-    <ClCompile Include="IO\LBIO.cpp" />
-    <ClCompile Include="Math\LBMath.cpp" />
-    <ClCompile Include="Resource\ResourceMgr.cpp" />
-    <ClCompile Include="Show\NullInput.cpp" />
-    <ClCompile Include="Show\Render.cpp" />
-    <ClCompile Include="Show\Sound.cpp" />
-    <ClCompile Include="System\Engine.cpp" />
-    <ClCompile Include="System\MM.cpp" />
-    <ClCompile Include="System\PluginMgr.cpp" />
-    <ClCompile Include="System\System.cpp" />
+    <ClCompile Include="DllExport.cpp" />
+    <ClCompile Include="DInputClass.cpp" />
+    <ClCompile Include="DInputFactory.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
