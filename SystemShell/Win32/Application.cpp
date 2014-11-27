@@ -16,6 +16,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	case WM_CHAR:
 		Limbo::Engine::Instance()->InputHandler((int)wParam);
 		break;
+	//case WM_TIMER:
+
+	//	break;
 	default:
 		return DefWindowProc(hWnd, message, wParam, lParam);
 	}
@@ -49,11 +52,29 @@ bool Application::Destory()
 int Application::Run()
 {
 	MSG msg;
-	while (GetMessage(&msg, NULL, 0, 0))
+	bool done = false;
+	while (!done)
 	{
-		TranslateMessage(&msg);
-		DispatchMessage(&msg);
-		Limbo::Engine::Instance()->Draw();
+		if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+		{
+			TranslateMessage(&msg);
+			DispatchMessage(&msg);
+		}
+		// 接收到WM_QUIT消息，退出程序. 
+		if (msg.message == WM_QUIT)
+		{
+			done = true;
+		}
+		else
+		{
+			//result = bexit; //如果按了ESC,也退出程序
+
+			Limbo::Engine::Instance()->Draw();
+			//if (result)
+			//{
+			//	done = true;
+			//}
+		}
 	}
 	return (int)msg.wParam;
 }

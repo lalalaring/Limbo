@@ -11,11 +11,6 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	MainWindow mw;
 	mw.Create();
 	Engine::Instance()->Create(mw.GetHwnd());
-	int32_t hm=PluginMgr::Instance()->Load(L"Render_D3d11.dll");
-
-	IRender* render = (IRender*)PluginMgr::Instance()->CreateInstance(hm);
-	render->Create(mw.GetHwnd(), 800, 600);
-	render->Draw();
 	app.Run();
 	Engine::Instance()->Destory();
 	app.Destory();

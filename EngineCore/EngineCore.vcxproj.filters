@@ -83,6 +83,12 @@
     <ClInclude Include="Interface\IInterface.h">
       <Filter>Interface</Filter>
     </ClInclude>
+    <ClInclude Include="Interface\ISound.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\IInput.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Math\LBMath.cpp">
